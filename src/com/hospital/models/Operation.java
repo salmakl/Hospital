@@ -26,16 +26,15 @@ public class Operation {
     int ref;
     String date;
     String type;
-
     String status;
     double prix;
     int assurance;
     int patient;
-    int hopital;
-    int salle;
+    Hospital hopital;
+    Room salle;
     int medecin;
 
-    public Operation(int ref, String date, String type, String status, int prix, int assurance, int patient, int hopital, int salle, int medecin) {
+    public Operation(int ref, String date, String type, String status, double prix, int assurance, int patient, Hospital hopital, Room salle, int medecin) {
         this.ref = ref;
         this.date = date;
         this.type = type;
@@ -49,16 +48,7 @@ public class Operation {
     }
 
 
-    //get operation by ref
-    public Optional<Operation> getOperationByRef(int ref) {
 
-        return null;
-    }
-
-    //add operation
-    public void addOperation(Operation operation) {
-
-    }
 
 
 
