@@ -10,8 +10,8 @@ public class Patient extends Person{
 	private String affiliationNumber;
 	private InsuranceType insuranceType;
 	
-	public Patient(Date hospitalEntryDate,String affiliationNumber,InsuranceType insuranceType) {
-		super();
+	public Patient(String firstname,String lastname,String phone,String address,Date hospitalEntryDate,String affiliationNumber,InsuranceType insuranceType) {
+		super(firstname,lastname,phone,address);
 		this.hospitalEntryDate = hospitalEntryDate;
 		this.affiliationNumber = affiliationNumber;
 		this.insuranceType = insuranceType;

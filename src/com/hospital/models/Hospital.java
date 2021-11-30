@@ -67,5 +67,6 @@ public class Hospital {
 		return "Hospital [id=" + id + ", name=" + name + ", city=" + city + ", doctors=" + doctors + ", rooms=" + rooms
 				+ "]";
 	}
+
 	
 }

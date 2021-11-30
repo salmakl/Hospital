@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface OperationInterface {
 
-    public Optional<Operation> getOperationByRef(int ref);
+    public Optional<Operation> getOperationByRef(List<Operation> operations, int ref);
 
     public void addOperation(List<Operation> operations);
 }

@@ -6,8 +6,8 @@ public class Doctor extends Person{
 	private TimeSlot shiftSlot;
 	private double salary;
 	
-	public Doctor(String professionNumber,TimeSlot shiftSlot,double salary) {
-		super();
+	public Doctor(String firstname,String lastname,String phone,String address, String professionNumber,TimeSlot shiftSlot,double salary) {
+		super(firstname,lastname,phone,address);
 		this.professionNumber = professionNumber;
 		this.shiftSlot = shiftSlot;
 		this.salary = salary;

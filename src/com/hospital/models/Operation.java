@@ -23,37 +23,60 @@ public class Operation {
 	// Après le payement d'une opération et si c'est passé avec succès le programme est terminé, sinon il faut renvoyer le montant vers la portefeuille patient
 	// et dans ce cas son dossier est en stand by pour le discuter au tribunal. (vous devez gérer les status de chaque opération)
 
-    int ref;
-    String date;
-    String type;
-    String status;
-    double prix;
-    int assurance;
-    int patient;
-    Hospital hopital;
-    Room salle;
-    int medecin;
+    private int ref;
+    private int room;
+    private int doctor;
+    private int patient;
+    private double price;
 
-    public Operation(int ref, String date, String type, String status, double prix, int assurance, int patient, Hospital hopital, Room salle, int medecin) {
+    public Operation(int ref, int room, int doctor, int patient, double price) {
         this.ref = ref;
-        this.date = date;
-        this.type = type;
-        this.status = status;
-        this.prix = prix;
-        this.assurance = assurance;
+
+        this.room = room;
+        this.doctor = doctor;
         this.patient = patient;
-        this.hopital = hopital;
-        this.salle = salle;
-        this.medecin = medecin;
+        this.price = price;
+    }
+
+ // Getters and Setters
+    public int getRef() {
+        return ref;
+    }
+
+    public void setRef(int ref) {
+        this.ref = ref;
     }
 
 
+    public int getRoom() {
+        return room;
+    }
 
+    public void setRoom(int room) {
+        this.room = room;
+    }
 
+    public int getDoctor() {
+        return doctor;
+    }
 
+    public void setDoctor(int doctor) {
+        this.doctor = doctor;
+    }
 
+    public int getPatient() {
+        return patient;
+    }
 
+    public void setPatient(int patient) {
+        this.patient = patient;
+    }
 
+    public double getPrice() {
+        return price;
+    }
 
-
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }
