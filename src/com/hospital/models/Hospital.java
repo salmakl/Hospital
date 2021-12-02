@@ -9,6 +9,8 @@ public class Hospital {
 	private String city;
 	private List<Doctor> doctors;
 	private List<Room> rooms;
+	private String status;
+
 	
 	public Hospital() {
 		
@@ -20,6 +22,14 @@ public class Hospital {
 		this.city = city;
 		this.doctors = doctors;
 		this.rooms = rooms;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public Long getId() {
@@ -63,10 +73,10 @@ public class Hospital {
 	}
 
 	@Override
-	public String toString() {
-		return "Hospital [id=" + id + ", name=" + name + ", city=" + city + ", doctors=" + doctors + ", rooms=" + rooms
-				+ "]";
-	}
+    public String toString() {
+        return "Hospital [id=" + id + ", name=" + name + ", city=" + city + ", doctors=" + doctors + ", rooms=" + rooms
+                + "]";
+    }
 
-	
+
 }
