@@ -12,6 +12,10 @@ import java.util.Optional;
 public class Main {
     public static void main(String[] args) {
 
+        Hospital h=new Hospital();
+        h.setCity("Safi");
+
+        System.out.println(h.toString());
         List <Doctor> doctors = new ArrayList<>();
         List <Patient> patients = new ArrayList<>();
         List <Room> rooms = new ArrayList<>();

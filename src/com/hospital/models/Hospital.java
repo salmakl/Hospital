@@ -13,7 +13,7 @@ public class Hospital {
 
 	
 	public Hospital() {
-		
+		this.id = 1L + (long) (Math.random() * (10L - 1L));
 	}
 	
 	public Hospital(String name,String city,List<Doctor> doctors,List<Room> rooms) {
@@ -36,9 +36,9 @@ public class Hospital {
 		return id;
 	}
 
-	public void setId(Long id) {
+	/*public void setId(Long id) {
 		this.id = id;
-	}
+	}*/
 
 	public String getName() {
 		return name;
